@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+@layer components {
+    .field {
+        @apply w-full rounded-xl bg-slate-800 p-4 placeholder:text-slate-500;
+    }
+
+    .tag {
+        @apply rounded-full bg-cyan-400/15 px-3 py-1 text-sm text-cyan-300;
+    }
+
+    .tag-option {
+        @apply flex items-center gap-2 rounded-full bg-slate-800 px-4 py-2 has-checked:bg-cyan-400/15 has-checked:text-cyan-300;
+    }
+
+    .tag-option input {
+        @apply accent-cyan-400;
+    }
+
+    .filter {
+        @apply rounded-full border border-slate-700 px-4 py-2 text-slate-300;
+    }
+
+    .filter-active {
+        @apply border-cyan-400 text-cyan-300;
+    }
+
+    .button {
+        @apply rounded-xl bg-cyan-400 px-5 py-3 font-semibold text-slate-950;
+    }
+}

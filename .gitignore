@@ -1,0 +1,11 @@
+.curso.json
+app/vendor/
+app/node_modules/
+app/.env
+app/storage/logs/*
+!app/storage/logs/.gitkeep
+app/storage/framework/*/*
+!app/storage/framework/*/.gitkeep
+app/public/build/
+app/database/*.sqlite
+.DS_Store
